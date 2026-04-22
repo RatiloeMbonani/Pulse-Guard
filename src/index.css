@@ -1,13 +1,121 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* FONT */
+body {
+  font-family: 'Geist', sans-serif;
+}
+
+/* THEME VARIABLES */
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card: #f5f5f5;
+}
+
+.dark {
+  --bg: #0F172A;
+  --text: #ffffff;
+  --card: #020617;
+}
+
+/* LAYOUT */
+.app {
+  display: flex;
+  height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background: #020617;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* HEADER */
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* ADMIN */
+.admin-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #9ca3af;
+}
+
+/* MENU */
+.menu {
+  padding: 15px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;   
+  color: #9ca3af;          
+}
+
+
+.menu-item:visited,
+.menu-item:active,
+.menu-item:focus {
+  text-decoration: none;
+  color: #9ca3af;
+}
+
+/* Hover effect */
+.menu-item:hover {
+  background: rgba(87, 183, 74, 0.2);
+  color: #57B74A;
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--card);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end; /* align toggle to right */
+  border-bottom: 1px solid #1f2937;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
