@@ -19,9 +19,11 @@ Node.js (for package management)
 🧭 Sidebar navigation
 
 🚀 Getting Started
-1. Clone the repository
-git clone https://github.com/your-username/Pulse-Guard.git
-2. Install dependencies
+1. Clone the repository  
+git clone https://github.com/RatiloeMbonani/Pulse-Guard.git
+---
+3. Install dependencies
 npm install
-3. Run the project
+---
+5. Run the project
 npm start
